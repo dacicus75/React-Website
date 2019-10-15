@@ -2,9 +2,21 @@
   "name": "react-website",
   "version": "1.0.0",
   "description": "Simple website built with react",
-  "main": "index.js",
+  "engines": {
+    "node": ">=9.x",
+    "npm": ">=5.x",
+    "yarn": ">=1.x.x"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "styled-components",
+    "website"
+  ],
+  "main": "./src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "parcel build ./src/index.html",
+    "start": "parcel ./src/index.html -p 1337"
   },
   "repository": {
     "type": "git",
@@ -12,6 +24,18 @@
   },
   "author": "Daniel Ardelean",
   "license": "MIT",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
+    "styled-components": "^2.4.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "parcel-bundler": "^1.12.4"
+  },
   "bugs": {
     "url": "https://github.com/dacicus75/React-Website/issues"
   },
